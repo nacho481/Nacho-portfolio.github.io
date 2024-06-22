@@ -1,0 +1,222 @@
+/*
+    • Almost white: #F7FFF7
+	• Light Gray: #CCDBDC
+	• Powder Blue: #9AD1D4 
+	• Middle Blue: #80CED7
+	• CG Blue: #007EA7
+	• Prussian Blue: #003249
+*/
+
+
+
+
+/* Global Styles
+--------------------------------- */
+
+html{
+    box-sizing: border-box;
+    
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body {
+    color: #003249;
+    margin: 0;  /* Gets rid of spacing on top */
+    padding: 0; 
+    /* Convention to make padding 0 on body to reset the default value to 0
+    since it wraps around the content on the page */
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+header {
+    background: #9AD1D4;
+    text-align: center;
+}
+img {width: 300px;}
+a {color: #007EA7;}
+a:hover {text-decoration: none;}
+
+.content-wrap{
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto; 
+    /* - 0 refers to top and bottom (no unit necessary)
+       - auto refers to LHS and RHS*/
+    padding: 60px 0; 
+}
+
+h1{
+    font-size: 70px;
+    line-height: 1; /* Override the inherited line-height of 1.5 */
+}
+
+h2{
+    font-size: 45px;
+    margin: 0;
+}
+
+h1, h2{
+    font-family: 'Caveat', cursive;
+    font-weight: 400; /* Removes the bold from the text */
+    margin: 0;
+}
+
+/* added before unique type selectors b/c this is more general  */
+
+h3 {
+    margin-bottom: 0; /* Remove space at the bottom */
+}
+
+/* Match to the 1st paragraph following an h3 that is nested
+within the .item-details container  */
+/* Apply to <p></p> tags after h3 headers */
+.item-details h3 + p {
+    font-style: italic;
+}
+
+/*  Apply to all <p> tags after h3 */
+.item-details h3 ~ p {
+    margin: 0; /* Remove the space */
+}
+
+/* This ensures that only the section tag 
+will be affected! */
+.divider > section {
+    border-bottom: 1px dashed #003249;
+    padding: 25px 0; /* 25 left and right, 0 top and bottom*/
+}
+
+/* We want to remove the border on the very
+last section b/c the border is meant to separate
+projects. There is no reason to separate empty
+space below a project */
+.divider > section:last-of-type {
+    border-bottom: none;
+}
+
+/* Profile
+--------------------------------- */
+
+/* Projects
+--------------------------------- */
+.projects {background-color: #80CED7; }
+.projects a {color: #007EA7;}
+
+
+.projects .btn{
+    color: #F7FFF7;
+    background: #003249;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px; /* Round edges to make it look like a button */
+    display: inline-block;
+    /* inline elements don't align vertically when you add padding and margin 
+    which is why you display it as an inline-block */
+}
+
+.projects .btn:hover{
+    /* 
+        1. Converted from hex to rgb
+        2. used rgba() to set opacity to 80
+        3. the opacity makes the background color transparent 
+    */
+    background: rgba(0,50,73,80%);   
+}
+
+.project-item{
+    overflow: hidden;
+    
+}
+
+.project-item img{
+    float: left;
+    margin-right: 20px;
+}
+
+/* To have image line up with the <h3></h3> header */
+.project-item h3{
+    margin-top: 0;
+}
+
+/* Work Experience 
+--------------------------------- */
+.work-experience{
+    background: #007EA7;
+    color: #F7FFF7;
+}
+
+.job-item {
+    display: grid;
+    /* create 2 columns 
+    create 2 columsn by giving 2 values
+    1fr is to have the 1st column smaller to 
+    the second column */
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+}
+
+/* Education
+--------------------------------- */
+.education {
+    /* we'll use long hand properties for 
+    pedagogical purposes 
+    - this CSS file is located inside the "CSS" fodler
+    so we need to move out of this folder which is why we
+    use the ".." to do that 
+    - then we "/" or move into the "images" directory, 
+    finally, we will select the image that we want from 
+    there */
+    /* color: white; */
+    background-image: url(../images/sharon-mccutcheon-unsplash.jpg);
+
+    /* ensure the background is always covered with an image */
+    background-size: cover;
+    /* ensure that we can always see the books in the image */
+    background-position: top right;
+
+    /* to show more of the image */
+    padding-bottom: 100px;
+}
+
+.education p {
+    width: 60%;
+}
+
+
+
+
+/* Contact Info
+--------------------------------- */
+footer{
+    background: #003249;
+    color: #F7FFF7;
+    text-align: center;
+}
+
+.contact-list {
+    list-style-type: none; /* Remove the bullet points */
+    padding: 0;            /* Removes the default space */
+    display: flex;
+
+    /* Helps control the spacing of the list items which are now flex-items 
+    space-between - helps distribute flex-items evenly 
+    */
+    justify-content: center; 
+    
+}
+
+/* This selector is going to give space between each links */
+
+.contact-list a {
+    padding: 15px;
+
+    /* Due to links being inline elements and this will adjust 
+    the position vertically and horizontally when the padding
+    is added. Also, this gives extra click space which is 
+    also beneficial to smartphone usrs  */
+    display: inline-block;
+}
