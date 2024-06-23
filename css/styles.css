@@ -24,7 +24,7 @@ body {
     padding: 0; 
     /* Convention to make padding 0 on body to reset the default value to 0
     since it wraps around the content on the page */
-    font-family: 'Vollkorn', sans-serif;
+    /* font-family: 'Vollkorn', sans-serif; */
     font-size: 17px;
     line-height: 1.5;
 
