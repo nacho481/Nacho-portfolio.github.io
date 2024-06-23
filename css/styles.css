@@ -15,7 +15,6 @@
 
 html{
     box-sizing: border-box;
-    
 }
 
 *, *:before, *:after{
@@ -28,7 +27,7 @@ body {
     padding: 0; 
     /* Convention to make padding 0 on body to reset the default value to 0
     since it wraps around the content on the page */
-    font-family: 'Playfair Display', serif;
+    font-family: 'Vollkorn', sans-serif;
     font-size: 17px;
     line-height: 1.5;
 }
@@ -36,17 +35,27 @@ header {
     background: #9AD1D4;
     text-align: center;
 }
-img {width: 300px;}
-a {color: #007EA7;}
-a:hover {text-decoration: none;}
+img {
+    width: 300px;
+}
+a {
+    color: #007EA7;
+}
+a:hover {
+    text-decoration: none;
+}
 
-.content-wrap{
+.content-wrap {
     max-width: 800px;
     width: 85%;
     margin: 0 auto; 
     /* - 0 refers to top and bottom (no unit necessary)
        - auto refers to LHS and RHS*/
     padding: 60px 0; 
+}
+
+.content-wrap:last-child {
+    padding-bottom: 10px;
 }
 
 h1{
@@ -60,7 +69,6 @@ h2{
 }
 
 h1, h2{
-    font-family: 'Caveat', cursive;
     font-weight: 400; /* Removes the bold from the text */
     margin: 0;
 }
@@ -103,11 +111,16 @@ space below a project */
 
 /* Projects
 --------------------------------- */
-.projects {background-color: #80CED7; }
-.projects a {color: #007EA7;}
+.projects {
+    background-color: #80CED7;
+}
+
+.projects a {
+    color: #007EA7;
+}
 
 
-.projects .btn{
+.projects .btn {
     color: #F7FFF7;
     background: #003249;
     text-decoration: none;
@@ -138,13 +151,13 @@ space below a project */
 }
 
 /* To have image line up with the <h3></h3> header */
-.project-item h3{
+.project-item h3 {
     margin-top: 0;
 }
 
 /* Work Experience 
 --------------------------------- */
-.work-experience{
+.work-experience {
     background: #007EA7;
     color: #F7FFF7;
 }
@@ -157,6 +170,11 @@ space below a project */
     the second column */
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
+}
+
+#certifications {
+    text-decoration: none;
+    list-style-type: none;
 }
 
 /* Education
