@@ -30,7 +30,7 @@ body {
     font-family: 'Vollkorn', sans-serif;
     font-size: 17px;
     line-height: 1.5;
-    
+
 }
 header {
     background: #9AD1D4;
@@ -39,9 +39,11 @@ header {
 img {
     width: 300px;
 }
+
 a {
     color: #007EA7;
 }
+
 a:hover {
     text-decoration: none;
 }
@@ -204,9 +206,6 @@ space below a project */
 .education p {
     width: 60%;
 }
-
-
-
 
 /* Contact Info
 --------------------------------- */
