@@ -195,6 +195,14 @@ a, button, .btn {
     transform: translateY(-4px);
 }
 
+
+.project-item img {
+    border-radius: 0.5rem;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 /* To have image line up with the <h3></h3> header */
 .project-item h3 {
     margin-top: 0;
@@ -263,6 +271,8 @@ footer{
     list-style-type: none; /* Remove the bullet points */
     padding: 0;            /* Removes the default space */
     display: flex;
+    gap: 1rem;  /* Modern way to add space between flex items */
+    flex-wrap: wrap;  /* Better mobile handling */
 
     /* Helps control the spacing of the list items which are now flex-items 
     space-between - helps distribute flex-items evenly 
