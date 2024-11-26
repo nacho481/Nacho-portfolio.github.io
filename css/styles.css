@@ -5,7 +5,26 @@
 	• Middle Blue: #80CED7
 	• CG Blue: #007EA7
 	• Prussian Blue: #003249
+
+    New Color Palette:
+    - Background White: #f8fafc
+    - Light Accent: #e2e8f0
+    - Primary Light: #64748b
+    - Primary: #334155
+    - Primary Dark: #1e293b
+    - Accent: #3b82f6
 */
+
+:root {
+    /* Color Variables */
+    --color-bg-primary: #f8fafc;
+    --color-bg-secondary: #e2e8f0;
+    --color-primary-light: #64748b;
+    --color-primary: #334155;
+    --color-primary-dark: #1e293b;
+    --color-accent: #3b82f6;
+    --color-text-light: #f8fafc;
+}
 
 /* Global Styles
 --------------------------------- */
@@ -19,7 +38,7 @@ html{
 }
 
 body {
-    color: #003249;
+    color: var(--color-primary);
     margin: 0;  /* Gets rid of spacing on top */
     padding: 0; 
     /* Convention to make padding 0 on body to reset the default value to 0
@@ -30,7 +49,8 @@ body {
 
 }
 header {
-    background: #9AD1D4;
+    background: var(--color-primary-dark);
+    color: var(--color-text-light);
     text-align: center;
 }
 img {
@@ -38,7 +58,7 @@ img {
 }
 
 a {
-    color: #007EA7;
+    color: var(--color-accent);
 }
 
 a:hover {
@@ -112,17 +132,17 @@ space below a project */
 /* Projects
 --------------------------------- */
 .projects {
-    background-color: #80CED7;
+    background-color: var(--color-bg-primary);
 }
 
 .projects a {
-    color: #007EA7;
+    color: var(--color-accent);
 }
 
 
 .projects .btn {
-    color: #F7FFF7;
-    background: #003249;
+    color: var(--color-text-light);
+    background: var(--color-primary);
     text-decoration: none;
     padding: 10px;
     border-radius: 4px; /* Round edges to make it look like a button */
@@ -137,12 +157,11 @@ space below a project */
         2. used rgba() to set opacity to 80
         3. the opacity makes the background color transparent 
     */
-    background: rgba(0,50,73,80%);   
+    background: rgba(51, 65, 85, 0.9);  /* keep this as a raw value for the opacity effect */
 }
 
 .project-item{
     overflow: hidden;
-    
 }
 
 .project-item img{
@@ -158,8 +177,8 @@ space below a project */
 /* Work Experience 
 --------------------------------- */
 .work-experience {
-    background: #007EA7;
-    color: #F7FFF7;
+    background: var(--color-primary);
+    color: var(--color-text-light);
 }
 
 .job-item {
@@ -189,12 +208,14 @@ space below a project */
     finally, we will select the image that we want from 
     there */
     /* color: white; */
-    background-image: url(../images/sharon-mccutcheon-unsplash.jpg);
+    /* background-image: url(../images/sharon-mccutcheon-unsplash.jpg); */
 
     /* ensure the background is always covered with an image */
-    background-size: cover;
+    /* background-size: cover; */
     /* ensure that we can always see the books in the image */
-    background-position: top right;
+    /* background-position: top right;
+     */
+    background-color: rgba(248, 250, 252, 0.9);  /* Keeping this as a raw value for the overlay effect */
 
     /* to show more of the image */
     padding-bottom: 100px;
@@ -207,8 +228,8 @@ space below a project */
 /* Contact Info
 --------------------------------- */
 footer{
-    background: #003249;
-    color: #F7FFF7;
+    background: var(--color-primary-dark);
+    color: var(--color-text-light);
     text-align: center;
 }
 
