@@ -176,13 +176,23 @@ a, button, .btn {
     background: rgba(51, 65, 85, 0.9);  /* keep this as a raw value for the opacity effect */
 }
 
+/* add a card like style to project items */
 .project-item{
-    overflow: hidden;
+    background: var(--color-bg-secondary);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
 }
 
 .project-item img{
     float: left;
     margin-right: 20px;
+}
+
+.project-item:hover {
+    transform: translateY(-4px);
 }
 
 /* To have image line up with the <h3></h3> header */
