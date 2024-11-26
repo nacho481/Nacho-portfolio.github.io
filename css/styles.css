@@ -139,6 +139,17 @@ space below a project */
     color: var(--color-accent);
 }
 
+.btn {
+    padding: 0.75rem 1.5rem;  /* More padding for better touch targets */
+    border-radius: 0.5rem;    /* Slightly rounded corners */
+    font-weight: 500;         /* Slightly bolder text */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+.btn:hover {
+    transform: translateY(-1px);  /* Slight lift effect */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Addds shadow effect*/
+}
 
 .projects .btn {
     color: var(--color-text-light);
@@ -149,6 +160,11 @@ space below a project */
     display: inline-block;
     /* inline elements don't align vertically when you add padding and margin 
     which is why you display it as an inline-block */
+}
+
+/* Add a subtle transition to all interactive elements */
+a, button, .btn {
+    transition: all 0.2s ease-in-out;
 }
 
 .projects .btn:hover{
