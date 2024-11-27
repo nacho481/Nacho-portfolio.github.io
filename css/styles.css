@@ -185,7 +185,7 @@ a, button, .btn {
     transition: all 0.2s ease-in-out;
 }
 
-.projects .btn:hover{
+.projects .btn:hover {
     /* 
         1. Converted from hex to rgb
         2. used rgba() to set opacity to 80
@@ -195,7 +195,7 @@ a, button, .btn {
 }
 
 /* add a card like style to project items */
-.project-item{
+.project-item {
     background: var(--color-bg-secondary);
     border-radius: 1rem;
     padding: 4rem 3rem;
@@ -209,7 +209,7 @@ a, button, .btn {
     align-items: flex-start;  /* Aligns items to top */
 }
 
-.project-item img{
+.project-item img {
     width: 300px;
     height: auto;
     object-fit: cover;
@@ -294,7 +294,7 @@ a, button, .btn {
 
 /* Contact Info
 --------------------------------- */
-footer{
+footer {
     background: var(--color-primary-dark);
     color: var(--color-text-light);
     text-align: center;
