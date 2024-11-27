@@ -143,6 +143,23 @@ ul li {
     color: var(--color-primary);
 }
 
+.theme-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background: var(--color-accent);
+    color: var(--color-text-light);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.05);
+}
+
 /* Match to the 1st paragraph following an h3 that is nested
 within the .item-details container  */
 /* Apply to <p></p> tags after h3 headers */
