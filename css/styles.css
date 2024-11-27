@@ -326,12 +326,42 @@ footer {
     display: flex; 
     gap: 1rem;  /* Modern way to add space between flex items */
     flex-wrap: wrap;  /* Better mobile handling */
-
-    /* Helps control the spacing of the list items which are now flex-items 
-    space-between - helps distribute flex-items evenly 
-    */
-    /* justify-content: center;  */
     
+    /* Center the items */
+    justify-content: center;
+
+    /* Center the entire list */
+    margin: 0 auto;
+
+    /* Ensure full width */
+    width: 100%;
+      
+}
+
+.contact-list li {
+    /* Add this to ensure list items have consistent sizing */
+
+    /* Don't grow, can shrink, auto base size */
+    flex: 0 1 auto;
+
+}
+
+.contact-list a {
+    /* Adjusted padding */
+    padding: 0.75rem 1rem;
+    
+    /* Remove underline */
+    text-decoration: none;
+
+    display: inline-block;
+
+    /* Smooth color transition */
+    transition: color 0.2s ease;
+}
+
+.contact-list a:hover {
+    /* Use accent color on hover */
+    color: var(--color-accent);
 }
 
 /* This selector is going to give space between each links */
@@ -407,11 +437,12 @@ footer {
     .contact-list {
         flex-direction: column;
         align-items: flex-start;
-        gap: 1rem;
+        justify-content: center;
+        gap: 0.75rem;
     }
     
     .contact-list a {
-        padding: 0.5rem 0;
+        padding: 0.5rem 0.75rem;
     }
 
 }
