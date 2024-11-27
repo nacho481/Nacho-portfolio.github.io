@@ -66,12 +66,17 @@ a:hover {
 }
 
 .content-wrap {
-    max-width: 800px;
+    /* previous max-width */
+    /* max-width: 800px; */
+    max-width: 1200px;
     width: 85%;
     margin: 0 auto; 
     /* - 0 refers to top and bottom (no unit necessary)
        - auto refers to LHS and RHS*/
-    padding: 60px 0; 
+    /* previous padding */
+    /* padding: 60px 0;  */
+
+    padding: 0 2rem;
 }
 
 .content-wrap:last-child {
@@ -98,6 +103,7 @@ h1, h2{
 h3 {
     margin-bottom: 0; /* Remove space at the bottom */
 }
+
 
 /* Match to the 1st paragraph following an h3 that is nested
 within the .item-details container  */
@@ -268,16 +274,16 @@ footer{
 }
 
 .contact-list {
-    list-style-type: none; /* Remove the bullet points */
+    list-style-type: none; /*Remove the bullet points */
     padding: 0;            /* Removes the default space */
-    display: flex;
+    display: flex; 
     gap: 1rem;  /* Modern way to add space between flex items */
     flex-wrap: wrap;  /* Better mobile handling */
 
     /* Helps control the spacing of the list items which are now flex-items 
     space-between - helps distribute flex-items evenly 
     */
-    justify-content: center; 
+    /* justify-content: center;  */
     
 }
 
