@@ -345,6 +345,30 @@ footer {
 
 /* Responsive design */
 @media (max-width: 768px) {
+
+    /* Global
+    --------------------------------- */
+    
+    /* Adjust font sizes for mobile */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h1, h2 {
+        padding-top: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Project section
+    --------------------------------- */
+
     /* Stack project items vertically on mobile */
     .project-item {
         flex-direction: column;
@@ -364,20 +388,26 @@ footer {
         padding: 0.75rem;
     }
 
-    /* Adjust font sizes for mobile */
-    h1 {
-        font-size: 2.5rem;
+    /* work
+    --------------------------------- */
+    /* Make job items stack on mobile */
+    .job-item {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
-    h2 {
-        font-size: 2rem;
+    /* Adjust the padding on mobile */
+    .job-item {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
-    h3 {
-        font-size: 1.5rem;
-    }
+    /* School
+    --------------------------------- */
 
-    
+    /* Footer 
+    ---------------------------------*/
+
     
 
 }
