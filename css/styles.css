@@ -342,3 +342,42 @@ footer {
     also beneficial to smartphone usrs  */
     display: inline-block;
 }
+
+/* Responsive design */
+@media (max-width: 768px) {
+    /* Stack project items vertically on mobile */
+    .project-item {
+        flex-direction: column;
+    }
+
+    .project-item img {
+        /* Full width on mobile */
+        width: 100%;
+        height: auto;
+        padding: 0.75rem; 
+
+        /* Space between image and content */
+        margin-bottom: 1rem;
+    }
+
+    .project-content {
+        padding: 0.75rem;
+    }
+
+    /* Adjust font sizes for mobile */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    
+    
+
+}
