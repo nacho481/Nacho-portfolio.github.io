@@ -224,6 +224,23 @@ a, button, .btn {
     flex-direction: column;
 }
 
+/* Make lists in the project descriptions look different */
+.project-content ul {
+    /* Remove bullets */
+    list-style-type: none;
+
+    /* Remove default padding */
+    padding-left: 0;
+}
+
+.project-content li {
+    /* add a nice accent line */
+    border-left: 3px solid var(--color-accent);
+
+    /* Space after accent line */
+    padding-left: 1rem;
+}
+
 .project-item:hover {
     transform: translateY(-4px);
 }
