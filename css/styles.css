@@ -530,6 +530,23 @@ footer {
     /* School
     --------------------------------- */
 
+    .education p {
+        /* Full width on mobile */
+        width: 100%;
+
+    }
+
+    /* Add some breathing room between sections */
+    .education section {
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--color-primary-light);
+    }
+
+    .education section:last-child {
+        border-bottom: none;
+    }
+
     /* Footer 
     ---------------------------------*/
     .contact-list {
