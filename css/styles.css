@@ -29,6 +29,18 @@
     --color-accent-light: #60a5fa;
 }
 
+/* Dark theme colors */
+[data-theme="dark"] {
+    --color-bg-primary: #0f172a;
+    --color-bg-secondary: #1e293b;
+    --color-primary-light: #94a3b8;
+    --color-primary: #e2e8f0;
+    --color-primary-dark: #f8fafc;
+    --color-accent: #3b82f6;
+    --color-text-light: #0f172a;
+    --color-accent-light: #93c5fd;
+}
+
 /* Global Styles
 --------------------------------- */
 
@@ -50,7 +62,10 @@ body {
     font-size: 17px;
     line-height: 1.5;
 
+    /* Add smooth transitions for theme switching */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 header {
     background: var(--color-primary-dark);
     color: var(--color-text-light);
@@ -119,6 +134,13 @@ ul li {
 
     /* Better readability */
     line-height: 1.6; 
+}
+
+/* Adjust header and footer for dark mode */
+[data-theme="dark"] header,
+[data-theme="dark"] footer {
+    background: var(--color-bg-secondary);
+    color: var(--color-primary);
 }
 
 /* Match to the 1st paragraph following an h3 that is nested
@@ -261,6 +283,12 @@ a, button, .btn {
 /* To have image line up with the <h3></h3> header */
 .project-item h3 {
     margin-top: 0;
+}
+
+/* Adjust project cards for dark mode */
+[data-theme="dark"] .project-item {
+    background: var(--color-bg-secondary);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Work Experience 
