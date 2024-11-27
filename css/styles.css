@@ -24,6 +24,9 @@
     --color-primary-dark: #1e293b;
     --color-accent: #3b82f6;
     --color-text-light: #f8fafc;
+
+    /* New hover color */
+    --color-accent-light: #60a5fa;
 }
 
 /* Global Styles
@@ -355,13 +358,17 @@ footer {
 
     display: inline-block;
 
-    /* Smooth color transition */
-    transition: color 0.2s ease;
+    /* Smooth color transition, short for 
+    the following */
+    /* transition: color 0.2s ease;  */
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
 }
 
 .contact-list a:hover {
     /* Use accent color on hover */
-    color: var(--color-accent);
+    color: var(--color-accent-light);
 }
 
 /* This selector is going to give space between each links */
