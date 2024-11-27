@@ -368,6 +368,12 @@ a, button, .btn {
     width: 60%;
 }
 
+/* Fix education section dark mode */
+[data-theme="dark"] .education {
+    /* Use theme background */
+    background-color: var(--color-bg-primary);
+}
+
 /* Contact Info
 --------------------------------- */
 footer {
