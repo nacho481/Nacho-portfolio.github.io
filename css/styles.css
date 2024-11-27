@@ -181,6 +181,20 @@ ul li {
     display: block;
 }
 
+[data-theme="dark"] .dark-icon { display: block;}
+[data-theme="dark"] .light-icon {display: none;}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Match to the 1st paragraph following an h3 that is nested
 within the .item-details container  */
 /* Apply to <p></p> tags after h3 headers */
