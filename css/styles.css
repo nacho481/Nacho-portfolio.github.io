@@ -84,6 +84,7 @@ a:hover {
 }
 
 h1 {
+    padding-top: 1rem;
     font-size: 70px;
     line-height: 1; /* Override the inherited line-height of 1.5 */
 }
@@ -214,6 +215,7 @@ a, button, .btn {
     height: auto;
     object-fit: cover;
     flex-shrink: 0;  /* Prevents image from shrinking */
+    padding-left: 1.5rem;
     /* float: left; */
     /* margin-right: 20px; */
 }
@@ -222,6 +224,7 @@ a, button, .btn {
     flex: 1;
     display: flex;
     flex-direction: column;
+    padding: 1rem;
 }
 
 /* Make lists in the project descriptions look different */
@@ -301,7 +304,7 @@ a, button, .btn {
     background-color: rgba(248, 250, 252, 0.9);  /* Keeping this as a raw value for the overlay effect */
 
     /* to show more of the image */
-    padding-bottom: 100px;
+    padding-bottom: 1rem;
 }
 
 .education p {
@@ -311,6 +314,7 @@ a, button, .btn {
 /* Contact Info
 --------------------------------- */
 footer {
+    padding-top: 1rem;
     background: var(--color-primary-dark);
     color: var(--color-text-light);
     text-align: center;
