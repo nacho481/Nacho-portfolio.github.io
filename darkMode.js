@@ -21,3 +21,27 @@ function toggleTheme() {
 
 // Initialize dark mode on page load
 initDarkMode();
+
+/**
+ * 
+ * @param {IntersectionObserverEntry} entries 
+ * @param {IntersectionObserver} observer 
+ */
+function handleIntersection(entries, observer) {
+     // entries = array of elements being observed
+    // observer = the IntersectionObserver instance
+    entries.forEach(entry => {
+        if (entry.isIntersecting) { // if element is visible
+            entry.target.classList.add('visible'); // add class
+        }
+    });
+}
+
+const observer = new IntersectionObserver(handleIntersection, {
+    threshold: 0.1 // trigger when 10% visible
+})
+
+document.querySelectorAll('section').forEach(section => {
+    section.classList.add('fade-in');
+    observer.observe(section);
+});
