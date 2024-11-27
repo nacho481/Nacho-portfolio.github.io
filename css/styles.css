@@ -29,11 +29,11 @@
 /* Global Styles
 --------------------------------- */
 
-html{
+html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after{
+*, *:before, *:after {
     box-sizing: inherit;
 }
 
@@ -83,12 +83,12 @@ a:hover {
     padding-bottom: 10px;
 }
 
-h1{
+h1 {
     font-size: 70px;
     line-height: 1; /* Override the inherited line-height of 1.5 */
 }
 
-h2{
+h2 {
     font-size: 45px;
     margin: 0;
 }
@@ -245,7 +245,6 @@ a, button, .btn {
     transform: translateY(-4px);
 }
 
-
 .project-item img {
     border-radius: 0.5rem;
     max-width: 100%;
@@ -391,12 +390,6 @@ footer {
     /* work
     --------------------------------- */
     /* Make job items stack on mobile */
-    .job-item {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
-    /* Adjust the padding on mobile */
     .job-item {
         grid-template-columns: 1fr;
         gap: 1rem;
