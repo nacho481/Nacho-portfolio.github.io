@@ -348,7 +348,7 @@ footer {
 
     /* Global
     --------------------------------- */
-    
+
     /* Adjust font sizes for mobile */
     h1 {
         font-size: 2.5rem;
@@ -407,7 +407,14 @@ footer {
 
     /* Footer 
     ---------------------------------*/
-
+    .contact-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
     
+    .contact-list a {
+        padding: 0.5rem 0;
+    }
 
 }
