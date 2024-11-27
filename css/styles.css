@@ -104,6 +104,18 @@ h3 {
     margin-bottom: 0; /* Remove space at the bottom */
 }
 
+ul {
+    padding-left: 1.5rem; /* Give space for all list markers*/
+    margin-top: 0.5rem; /* Space after header*/
+}
+
+ul li {
+    /* Space between list items */
+    margin-bottom: 0.5rem; 
+
+    /* Better readability */
+    line-height: 1.6; 
+}
 
 /* Match to the 1st paragraph following an h3 that is nested
 within the .item-details container  */
@@ -198,8 +210,18 @@ a, button, .btn {
 }
 
 .project-item img{
-    float: left;
-    margin-right: 20px;
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;  /* Prevents image from shrinking */
+    /* float: left; */
+    /* margin-right: 20px; */
+}
+
+.project-content { /* Add this wrapper div around your text content */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-item:hover {
